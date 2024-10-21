@@ -1,0 +1,32 @@
+Comandos para ativar o ambiente virtual
+
+cd myproject
+
+\.venv\Scripts\activate
+_____________________________________________________________
+
+Comando para rodar a aplicação FLASK
+
+flask --app src.app run --debug
+
+_____________________________________________________________
+
+Migration
+
+flask --app src.app db init
+
+Criando a primeira versão 
+
+flask --app src.app db  migrate -m "Initial migration"
+
+Fazendo o upgrade da versão:
+
+flask --app src.app db upgrade
+
+Fazendo o Downgrade da versão:
+flask --app src.app db downgrade
+
+Verificando a versão atual:
+flask --app src.app db current
+
+_____________________________________________________________
